@@ -10,6 +10,7 @@ class ReposStore {
   }
   onSearch() {
     this.loading = true
+    this.repos = []
   }
   onSearchSuccess(repos) {
     this.loading = false

@@ -14,7 +14,7 @@ $(function () {
 
 
 
-},{"./routes.jsx":"/Users/jonathanbirkholz/js/react/talk3/app/routes.jsx","jquery":"/Users/jonathanbirkholz/js/react/talk3/node_modules/jquery/dist/jquery.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/actions/repos-actions.js":[function(require,module,exports){
+},{"./routes.jsx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/routes.jsx","jquery":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/jquery/dist/jquery.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/actions/repos-actions.js":[function(require,module,exports){
 "use strict";
 
 var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
@@ -77,7 +77,7 @@ module.exports = alt.createActions(ReposActions)
 
 ;
 
-},{"../alt-application.js":"/Users/jonathanbirkholz/js/react/talk3/app/alt-application.js","superagent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/lib/client.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/alt-application.js":[function(require,module,exports){
+},{"../alt-application.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/alt-application.js","superagent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/lib/client.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/alt-application.js":[function(require,module,exports){
 "use strict";
 
 var Alt = require("alt");
@@ -88,7 +88,7 @@ module.exports = alt
 
 ;
 
-},{"alt":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/dist/alt.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/routes.jsx":[function(require,module,exports){
+},{"alt":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/dist/alt.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/routes.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -103,7 +103,7 @@ module.exports = React.createElement(Route, { handler: App }, React.createElemen
 
 
 
-},{"./views/app.jsx":"/Users/jonathanbirkholz/js/react/talk3/app/views/app.jsx","./views/repo-details.jsx":"/Users/jonathanbirkholz/js/react/talk3/app/views/repo-details.jsx","./views/repos.jsx":"/Users/jonathanbirkholz/js/react/talk3/app/views/repos.jsx","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/stores/repo-details-store.js":[function(require,module,exports){
+},{"./views/app.jsx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/app.jsx","./views/repo-details.jsx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/repo-details.jsx","./views/repos.jsx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/repos.jsx","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/stores/repo-details-store.js":[function(require,module,exports){
 "use strict";
 
 var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
@@ -141,7 +141,7 @@ module.exports = alt.createStore(RepoDetailsStore)
 
 ;
 
-},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/talk3/app/actions/repos-actions.js","../alt-application.js":"/Users/jonathanbirkholz/js/react/talk3/app/alt-application.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/stores/repos-store.js":[function(require,module,exports){
+},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/actions/repos-actions.js","../alt-application.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/alt-application.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/stores/repos-store.js":[function(require,module,exports){
 "use strict";
 
 var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
@@ -165,6 +165,7 @@ var ReposStore = (function () {
     onSearch: {
       value: function onSearch() {
         this.loading = true;
+        this.repos = [];
       },
       writable: true,
       configurable: true
@@ -187,7 +188,7 @@ module.exports = alt.createStore(ReposStore)
 
 ;
 
-},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/talk3/app/actions/repos-actions.js","../alt-application.js":"/Users/jonathanbirkholz/js/react/talk3/app/alt-application.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/views/app.jsx":[function(require,module,exports){
+},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/actions/repos-actions.js","../alt-application.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/alt-application.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/app.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -203,7 +204,7 @@ module.exports = React.createClass({ displayName: "exports",
 
 ;
 
-},{"./header.jsx":"/Users/jonathanbirkholz/js/react/talk3/app/views/header.jsx","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/views/header.jsx":[function(require,module,exports){
+},{"./header.jsx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/header.jsx","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/header.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -221,7 +222,7 @@ module.exports = React.createClass({ displayName: "exports",
 
 ;
 
-},{"react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/views/repo-card.jsx":[function(require,module,exports){
+},{"react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/repo-card.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -239,7 +240,7 @@ module.exports = React.createClass({ displayName: "exports",
 
 ;
 
-},{"react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/views/repo-details.jsx":[function(require,module,exports){
+},{"react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/repo-details.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -276,7 +277,7 @@ module.exports = React.createClass({ displayName: "exports",
 
 ;
 
-},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/talk3/app/actions/repos-actions.js","../stores/repo-details-store.js":"/Users/jonathanbirkholz/js/react/talk3/app/stores/repo-details-store.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/app/views/repos.jsx":[function(require,module,exports){
+},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/actions/repos-actions.js","../stores/repo-details-store.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/stores/repo-details-store.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react-router":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/repos.jsx":[function(require,module,exports){
 "use strict";
 
 var React = require("react/addons");
@@ -324,7 +325,7 @@ module.exports = React.createClass({ displayName: "exports",
 
 ;
 
-},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/talk3/app/actions/repos-actions.js","../stores/repos-store.js":"/Users/jonathanbirkholz/js/react/talk3/app/stores/repos-store.js","./repo-card.jsx":"/Users/jonathanbirkholz/js/react/talk3/app/views/repo-card.jsx","react/addons":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/addons.js","superagent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/lib/client.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/dist/alt.js":[function(require,module,exports){
+},{"../actions/repos-actions.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/actions/repos-actions.js","../stores/repos-store.js":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/stores/repos-store.js","./repo-card.jsx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/app/views/repo-card.jsx","react/addons":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/addons.js","superagent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/lib/client.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/dist/alt.js":[function(require,module,exports){
 "use strict";
 
 var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
@@ -831,7 +832,7 @@ var Alt = (function () {
 module.exports = Alt;
 
 
-},{"es-symbol":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/es-symbol/dist/symbol.js","eventemitter3":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/eventemitter3/index.js","flux":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/flux/index.js","object-assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/object-assign/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/es-symbol/dist/symbol.js":[function(require,module,exports){
+},{"es-symbol":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/es-symbol/dist/symbol.js","eventemitter3":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/eventemitter3/index.js","flux":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/flux/index.js","object-assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/object-assign/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/es-symbol/dist/symbol.js":[function(require,module,exports){
 "use strict";
 
 var _defineProperty = function (obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); };
@@ -977,7 +978,7 @@ module.exports = typeof Symbol === "function" ? Symbol : xSymbol;
 // 19.4.3.5
 
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/eventemitter3/index.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/eventemitter3/index.js":[function(require,module,exports){
 'use strict';
 
 /**
@@ -1208,7 +1209,7 @@ EventEmitter.EventEmitter3 = EventEmitter;
 //
 module.exports = EventEmitter;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/flux/index.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/flux/index.js":[function(require,module,exports){
 /**
  * Copyright (c) 2014, Facebook, Inc.
  * All rights reserved.
@@ -1220,7 +1221,7 @@ module.exports = EventEmitter;
 
 module.exports.Dispatcher = require('./lib/Dispatcher')
 
-},{"./lib/Dispatcher":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/flux/lib/Dispatcher.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/flux/lib/Dispatcher.js":[function(require,module,exports){
+},{"./lib/Dispatcher":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/flux/lib/Dispatcher.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/flux/lib/Dispatcher.js":[function(require,module,exports){
 /*
  * Copyright (c) 2014, Facebook, Inc.
  * All rights reserved.
@@ -1472,7 +1473,7 @@ var _prefix = 'ID_';
 
 module.exports = Dispatcher;
 
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/flux/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/flux/lib/invariant.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/flux/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/flux/lib/invariant.js":[function(require,module,exports){
 /**
  * Copyright (c) 2014, Facebook, Inc.
  * All rights reserved.
@@ -1527,7 +1528,7 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/alt/node_modules/object-assign/index.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/alt/node_modules/object-assign/index.js":[function(require,module,exports){
 'use strict';
 
 function ToObject(val) {
@@ -1555,7 +1556,7 @@ module.exports = Object.assign || function (target, source) {
 	return to;
 };
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -1614,7 +1615,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
  * http://jquery.com/
@@ -10821,7 +10822,7 @@ return jQuery;
 
 }));
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Cancellation.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Cancellation.js":[function(require,module,exports){
 "use strict";
 
 /**
@@ -10831,7 +10832,7 @@ return jQuery;
 function Cancellation() {}
 
 module.exports = Cancellation;
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Configuration.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Configuration.js":[function(require,module,exports){
 "use strict";
 
 var warning = require("react/lib/warning");
@@ -10864,7 +10865,7 @@ var Configuration = {
 };
 
 module.exports = Configuration;
-},{"react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/History.js":[function(require,module,exports){
+},{"react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/History.js":[function(require,module,exports){
 "use strict";
 
 var invariant = require("react/lib/invariant");
@@ -10895,7 +10896,7 @@ var History = {
 };
 
 module.exports = History;
-},{"react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Match.js":[function(require,module,exports){
+},{"react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Match.js":[function(require,module,exports){
 "use strict";
 
 /* jshint -W084 */
@@ -10958,7 +10959,7 @@ Match.findMatchForPath = function (routes, path) {
 };
 
 module.exports = Match;
-},{"./utils/Path":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/Path.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Navigation.js":[function(require,module,exports){
+},{"./utils/Path":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/Path.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Navigation.js":[function(require,module,exports){
 "use strict";
 
 var PropTypes = require("./PropTypes");
@@ -11033,7 +11034,7 @@ var Navigation = {
 };
 
 module.exports = Navigation;
-},{"./PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/NavigationContext.js":[function(require,module,exports){
+},{"./PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/NavigationContext.js":[function(require,module,exports){
 "use strict";
 
 var PropTypes = require("./PropTypes");
@@ -11064,7 +11065,7 @@ var NavigationContext = {
 };
 
 module.exports = NavigationContext;
-},{"./PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js":[function(require,module,exports){
+},{"./PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js":[function(require,module,exports){
 "use strict";
 
 var assign = require("react/lib/Object.assign");
@@ -11084,7 +11085,7 @@ var PropTypes = assign({
 }, ReactPropTypes);
 
 module.exports = PropTypes;
-},{"react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Redirect.js":[function(require,module,exports){
+},{"react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Redirect.js":[function(require,module,exports){
 "use strict";
 
 /**
@@ -11097,7 +11098,7 @@ function Redirect(to, params, query) {
 }
 
 module.exports = Redirect;
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Route.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Route.js":[function(require,module,exports){
 "use strict";
 
 var assign = require("react/lib/Object.assign");
@@ -11275,7 +11276,7 @@ Route.createRedirect = function (options) {
 };
 
 module.exports = Route;
-},{"./utils/Path":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/Path.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/RouteHandlerMixin.js":[function(require,module,exports){
+},{"./utils/Path":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/Path.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/RouteHandlerMixin.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -11330,7 +11331,7 @@ var RouteHandlerMixin = {
 };
 
 module.exports = RouteHandlerMixin;
-},{"./PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/ScrollHistory.js":[function(require,module,exports){
+},{"./PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/ScrollHistory.js":[function(require,module,exports){
 "use strict";
 
 var invariant = require("react/lib/invariant");
@@ -11406,7 +11407,7 @@ var ScrollHistory = {
 };
 
 module.exports = ScrollHistory;
-},{"./utils/getWindowScrollPosition":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/getWindowScrollPosition.js","react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/State.js":[function(require,module,exports){
+},{"./utils/getWindowScrollPosition":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/getWindowScrollPosition.js","react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/State.js":[function(require,module,exports){
 "use strict";
 
 var PropTypes = require("./PropTypes");
@@ -11486,7 +11487,7 @@ var State = {
 };
 
 module.exports = State;
-},{"./PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/StateContext.js":[function(require,module,exports){
+},{"./PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/StateContext.js":[function(require,module,exports){
 "use strict";
 
 var assign = require("react/lib/Object.assign");
@@ -11583,7 +11584,7 @@ var StateContext = {
 };
 
 module.exports = StateContext;
-},{"./PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","./utils/Path":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/Path.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Transition.js":[function(require,module,exports){
+},{"./PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","./utils/Path":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/Path.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Transition.js":[function(require,module,exports){
 "use strict";
 
 /* jshint -W058 */
@@ -11659,7 +11660,7 @@ Transition.to = function (transition, routes, params, query, callback) {
 };
 
 module.exports = Transition;
-},{"./Cancellation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Cancellation.js","./Redirect":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Redirect.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/actions/LocationActions.js":[function(require,module,exports){
+},{"./Cancellation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Cancellation.js","./Redirect":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Redirect.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/actions/LocationActions.js":[function(require,module,exports){
 "use strict";
 
 /**
@@ -11685,7 +11686,7 @@ var LocationActions = {
 };
 
 module.exports = LocationActions;
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/behaviors/ImitateBrowserBehavior.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/behaviors/ImitateBrowserBehavior.js":[function(require,module,exports){
 "use strict";
 
 var LocationActions = require("../actions/LocationActions");
@@ -11715,7 +11716,7 @@ var ImitateBrowserBehavior = {
 };
 
 module.exports = ImitateBrowserBehavior;
-},{"../actions/LocationActions":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/actions/LocationActions.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/behaviors/ScrollToTopBehavior.js":[function(require,module,exports){
+},{"../actions/LocationActions":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/actions/LocationActions.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/behaviors/ScrollToTopBehavior.js":[function(require,module,exports){
 "use strict";
 
 /**
@@ -11731,7 +11732,7 @@ var ScrollToTopBehavior = {
 };
 
 module.exports = ScrollToTopBehavior;
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/DefaultRoute.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/DefaultRoute.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -11760,7 +11761,7 @@ var DefaultRoute = React.createClass({
 });
 
 module.exports = DefaultRoute;
-},{"../Configuration":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Link.js":[function(require,module,exports){
+},{"../Configuration":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Link.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -11873,7 +11874,7 @@ var Link = React.createClass({
 });
 
 module.exports = Link;
-},{"../Navigation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Navigation.js","../PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","../Route":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Route.js","../State":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/State.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","react/lib/cx":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/cx.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/NotFoundRoute.js":[function(require,module,exports){
+},{"../Navigation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Navigation.js","../PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","../Route":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Route.js","../State":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/State.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","react/lib/cx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/cx.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/NotFoundRoute.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -11903,7 +11904,7 @@ var NotFoundRoute = React.createClass({
 });
 
 module.exports = NotFoundRoute;
-},{"../Configuration":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Redirect.js":[function(require,module,exports){
+},{"../Configuration":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Redirect.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -11930,7 +11931,7 @@ var Redirect = React.createClass({
 });
 
 module.exports = Redirect;
-},{"../Configuration":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Route.js":[function(require,module,exports){
+},{"../Configuration":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Route.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -11999,7 +12000,7 @@ var Route = React.createClass({
 });
 
 module.exports = Route;
-},{"../Configuration":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","./RouteHandler":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/RouteHandler.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/RouteHandler.js":[function(require,module,exports){
+},{"../Configuration":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Configuration.js","../PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","./RouteHandler":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/RouteHandler.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/RouteHandler.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -12022,7 +12023,7 @@ var RouteHandler = React.createClass({
 });
 
 module.exports = RouteHandler;
-},{"../RouteHandlerMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/RouteHandlerMixin.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/createRouter.js":[function(require,module,exports){
+},{"../RouteHandlerMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/RouteHandlerMixin.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/createRouter.js":[function(require,module,exports){
 (function (process){
 "use strict";
 
@@ -12481,7 +12482,7 @@ function createRouter(options) {
 
 module.exports = createRouter;
 }).call(this,require('_process'))
-},{"./Cancellation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Cancellation.js","./History":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/History.js","./Match":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Match.js","./NavigationContext":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/NavigationContext.js","./PropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/PropTypes.js","./Redirect":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Redirect.js","./Route":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Route.js","./ScrollHistory":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/ScrollHistory.js","./StateContext":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/StateContext.js","./Transition":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Transition.js","./actions/LocationActions":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/actions/LocationActions.js","./behaviors/ImitateBrowserBehavior":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/behaviors/ImitateBrowserBehavior.js","./createRoutesFromReactChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/createRoutesFromReactChildren.js","./isReactChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/isReactChildren.js","./locations/HashLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HashLocation.js","./locations/HistoryLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HistoryLocation.js","./locations/RefreshLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/RefreshLocation.js","./locations/StaticLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/StaticLocation.js","./utils/Path":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/Path.js","./utils/supportsHistory":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/supportsHistory.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/createRoutesFromReactChildren.js":[function(require,module,exports){
+},{"./Cancellation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Cancellation.js","./History":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/History.js","./Match":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Match.js","./NavigationContext":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/NavigationContext.js","./PropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/PropTypes.js","./Redirect":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Redirect.js","./Route":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Route.js","./ScrollHistory":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/ScrollHistory.js","./StateContext":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/StateContext.js","./Transition":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Transition.js","./actions/LocationActions":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/actions/LocationActions.js","./behaviors/ImitateBrowserBehavior":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/behaviors/ImitateBrowserBehavior.js","./createRoutesFromReactChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/createRoutesFromReactChildren.js","./isReactChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/isReactChildren.js","./locations/HashLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HashLocation.js","./locations/HistoryLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HistoryLocation.js","./locations/RefreshLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/RefreshLocation.js","./locations/StaticLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/StaticLocation.js","./utils/Path":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/Path.js","./utils/supportsHistory":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/supportsHistory.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/createRoutesFromReactChildren.js":[function(require,module,exports){
 "use strict";
 
 /* jshint -W084 */
@@ -12564,7 +12565,7 @@ function createRoutesFromReactChildren(children) {
 }
 
 module.exports = createRoutesFromReactChildren;
-},{"./Route":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Route.js","./components/DefaultRoute":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/DefaultRoute.js","./components/NotFoundRoute":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/NotFoundRoute.js","./components/Redirect":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Redirect.js","react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/index.js":[function(require,module,exports){
+},{"./Route":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Route.js","./components/DefaultRoute":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/DefaultRoute.js","./components/NotFoundRoute":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/NotFoundRoute.js","./components/Redirect":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Redirect.js","react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js","react/lib/Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","react/lib/warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/index.js":[function(require,module,exports){
 "use strict";
 
 exports.DefaultRoute = require("./components/DefaultRoute");
@@ -12594,7 +12595,7 @@ exports.createRedirect = require("./Route").createRedirect;
 exports.createRoutesFromReactChildren = require("./createRoutesFromReactChildren");
 exports.create = require("./createRouter");
 exports.run = require("./runRouter");
-},{"./History":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/History.js","./Navigation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Navigation.js","./Route":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/Route.js","./RouteHandlerMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/RouteHandlerMixin.js","./State":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/State.js","./behaviors/ImitateBrowserBehavior":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/behaviors/ImitateBrowserBehavior.js","./behaviors/ScrollToTopBehavior":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/behaviors/ScrollToTopBehavior.js","./components/DefaultRoute":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/DefaultRoute.js","./components/Link":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Link.js","./components/NotFoundRoute":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/NotFoundRoute.js","./components/Redirect":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Redirect.js","./components/Route":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/Route.js","./components/RouteHandler":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/components/RouteHandler.js","./createRouter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/createRouter.js","./createRoutesFromReactChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/createRoutesFromReactChildren.js","./locations/HashLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HashLocation.js","./locations/HistoryLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HistoryLocation.js","./locations/RefreshLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/RefreshLocation.js","./locations/StaticLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/StaticLocation.js","./runRouter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/runRouter.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/isReactChildren.js":[function(require,module,exports){
+},{"./History":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/History.js","./Navigation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Navigation.js","./Route":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/Route.js","./RouteHandlerMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/RouteHandlerMixin.js","./State":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/State.js","./behaviors/ImitateBrowserBehavior":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/behaviors/ImitateBrowserBehavior.js","./behaviors/ScrollToTopBehavior":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/behaviors/ScrollToTopBehavior.js","./components/DefaultRoute":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/DefaultRoute.js","./components/Link":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Link.js","./components/NotFoundRoute":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/NotFoundRoute.js","./components/Redirect":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Redirect.js","./components/Route":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/Route.js","./components/RouteHandler":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/components/RouteHandler.js","./createRouter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/createRouter.js","./createRoutesFromReactChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/createRoutesFromReactChildren.js","./locations/HashLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HashLocation.js","./locations/HistoryLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HistoryLocation.js","./locations/RefreshLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/RefreshLocation.js","./locations/StaticLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/StaticLocation.js","./runRouter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/runRouter.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/isReactChildren.js":[function(require,module,exports){
 "use strict";
 
 var React = require("react");
@@ -12608,7 +12609,7 @@ function isReactChildren(object) {
 }
 
 module.exports = isReactChildren;
-},{"react":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HashLocation.js":[function(require,module,exports){
+},{"react":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HashLocation.js":[function(require,module,exports){
 "use strict";
 
 var LocationActions = require("../actions/LocationActions");
@@ -12727,7 +12728,7 @@ var HashLocation = {
 };
 
 module.exports = HashLocation;
-},{"../History":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/History.js","../actions/LocationActions":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/actions/LocationActions.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HistoryLocation.js":[function(require,module,exports){
+},{"../History":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/History.js","../actions/LocationActions":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/actions/LocationActions.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HistoryLocation.js":[function(require,module,exports){
 "use strict";
 
 var LocationActions = require("../actions/LocationActions");
@@ -12820,7 +12821,7 @@ var HistoryLocation = {
 };
 
 module.exports = HistoryLocation;
-},{"../History":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/History.js","../actions/LocationActions":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/actions/LocationActions.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/RefreshLocation.js":[function(require,module,exports){
+},{"../History":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/History.js","../actions/LocationActions":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/actions/LocationActions.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/RefreshLocation.js":[function(require,module,exports){
 "use strict";
 
 var HistoryLocation = require("./HistoryLocation");
@@ -12852,7 +12853,7 @@ var RefreshLocation = {
 };
 
 module.exports = RefreshLocation;
-},{"../History":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/History.js","./HistoryLocation":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/HistoryLocation.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/locations/StaticLocation.js":[function(require,module,exports){
+},{"../History":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/History.js","./HistoryLocation":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/HistoryLocation.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/locations/StaticLocation.js":[function(require,module,exports){
 "use strict";
 
 var invariant = require("react/lib/invariant");
@@ -12883,7 +12884,7 @@ StaticLocation.prototype.toString = function () {
 };
 
 module.exports = StaticLocation;
-},{"react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/runRouter.js":[function(require,module,exports){
+},{"react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/runRouter.js":[function(require,module,exports){
 "use strict";
 
 var createRouter = require("./createRouter");
@@ -12934,7 +12935,7 @@ function runRouter(routes, location, callback) {
 }
 
 module.exports = runRouter;
-},{"./createRouter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/createRouter.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/Path.js":[function(require,module,exports){
+},{"./createRouter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/createRouter.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/Path.js":[function(require,module,exports){
 "use strict";
 
 var invariant = require("react/lib/invariant");
@@ -13088,7 +13089,7 @@ var Path = {
 };
 
 module.exports = Path;
-},{"qs":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/index.js","qs/lib/utils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/utils.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/getWindowScrollPosition.js":[function(require,module,exports){
+},{"qs":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/index.js","qs/lib/utils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/utils.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/getWindowScrollPosition.js":[function(require,module,exports){
 "use strict";
 
 var invariant = require("react/lib/invariant");
@@ -13107,7 +13108,7 @@ function getWindowScrollPosition() {
 }
 
 module.exports = getWindowScrollPosition;
-},{"react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/lib/utils/supportsHistory.js":[function(require,module,exports){
+},{"react/lib/ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","react/lib/invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/lib/utils/supportsHistory.js":[function(require,module,exports){
 "use strict";
 
 function supportsHistory() {
@@ -13124,10 +13125,10 @@ function supportsHistory() {
 }
 
 module.exports = supportsHistory;
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/index.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/index.js":[function(require,module,exports){
 module.exports = require('./lib/');
 
-},{"./lib/":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/index.js":[function(require,module,exports){
+},{"./lib/":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/index.js":[function(require,module,exports){
 // Load modules
 
 var Stringify = require('./stringify');
@@ -13144,7 +13145,7 @@ module.exports = {
     parse: Parse
 };
 
-},{"./parse":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/parse.js","./stringify":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/stringify.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/parse.js":[function(require,module,exports){
+},{"./parse":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/parse.js","./stringify":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/stringify.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/parse.js":[function(require,module,exports){
 // Load modules
 
 var Utils = require('./utils');
@@ -13303,7 +13304,7 @@ module.exports = function (str, options) {
     return Utils.compact(obj);
 };
 
-},{"./utils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/utils.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/stringify.js":[function(require,module,exports){
+},{"./utils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/utils.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/stringify.js":[function(require,module,exports){
 // Load modules
 
 var Utils = require('./utils');
@@ -13382,7 +13383,7 @@ module.exports = function (obj, options) {
     return keys.join(delimiter);
 };
 
-},{"./utils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/utils.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react-router/node_modules/qs/lib/utils.js":[function(require,module,exports){
+},{"./utils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/utils.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react-router/node_modules/qs/lib/utils.js":[function(require,module,exports){
 // Load modules
 
 
@@ -13516,10 +13517,10 @@ exports.isBuffer = function (obj) {
         obj.constructor.isBuffer(obj));
 };
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/addons.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/addons.js":[function(require,module,exports){
 module.exports = require('./lib/ReactWithAddons');
 
-},{"./lib/ReactWithAddons":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactWithAddons.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/AutoFocusMixin.js":[function(require,module,exports){
+},{"./lib/ReactWithAddons":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactWithAddons.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/AutoFocusMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -13546,7 +13547,7 @@ var AutoFocusMixin = {
 
 module.exports = AutoFocusMixin;
 
-},{"./focusNode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/focusNode.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
+},{"./focusNode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/focusNode.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
  * All rights reserved.
@@ -13768,7 +13769,7 @@ var BeforeInputEventPlugin = {
 
 module.exports = BeforeInputEventPlugin;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./SyntheticInputEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticInputEvent.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSCore.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./SyntheticInputEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticInputEvent.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSCore.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -13880,7 +13881,7 @@ var CSSCore = {
 module.exports = CSSCore;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -13999,7 +14000,7 @@ var CSSProperty = {
 
 module.exports = CSSProperty;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -14134,7 +14135,7 @@ var CSSPropertyOperations = {
 module.exports = CSSPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./CSSProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSProperty.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./camelizeStyleName":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/camelizeStyleName.js","./dangerousStyleValue":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/dangerousStyleValue.js","./hyphenateStyleName":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/hyphenateStyleName.js","./memoizeStringOnly":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/memoizeStringOnly.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
+},{"./CSSProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSProperty.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./camelizeStyleName":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/camelizeStyleName.js","./dangerousStyleValue":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/dangerousStyleValue.js","./hyphenateStyleName":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/hyphenateStyleName.js","./memoizeStringOnly":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/memoizeStringOnly.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -14234,7 +14235,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 module.exports = CallbackQueue;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -14616,7 +14617,7 @@ var ChangeEventPlugin = {
 
 module.exports = ChangeEventPlugin;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js","./isEventSupported":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js","./isEventSupported":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -14641,7 +14642,7 @@ var ClientReactRootIndex = {
 
 module.exports = ClientReactRootIndex;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CompositionEventPlugin.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CompositionEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -14900,7 +14901,7 @@ var CompositionEventPlugin = {
 
 module.exports = CompositionEventPlugin;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./ReactInputSelection":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInputSelection.js","./SyntheticCompositionEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticCompositionEvent.js","./getTextContentAccessor":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getTextContentAccessor.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./ReactInputSelection":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInputSelection.js","./SyntheticCompositionEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticCompositionEvent.js","./getTextContentAccessor":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getTextContentAccessor.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -15075,7 +15076,7 @@ var DOMChildrenOperations = {
 module.exports = DOMChildrenOperations;
 
 }).call(this,require('_process'))
-},{"./Danger":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./getTextContentAccessor":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getTextContentAccessor.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
+},{"./Danger":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./getTextContentAccessor":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getTextContentAccessor.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -15374,7 +15375,7 @@ var DOMProperty = {
 module.exports = DOMProperty;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -15571,7 +15572,7 @@ var DOMPropertyOperations = {
 module.exports = DOMPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js","./escapeTextForBrowser":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/escapeTextForBrowser.js","./memoizeStringOnly":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/memoizeStringOnly.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Danger.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js","./escapeTextForBrowser":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/escapeTextForBrowser.js","./memoizeStringOnly":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/memoizeStringOnly.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Danger.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -15757,7 +15758,7 @@ var Danger = {
 module.exports = Danger;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./createNodesFromMarkup":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/createNodesFromMarkup.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js","./getMarkupWrap":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./createNodesFromMarkup":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/createNodesFromMarkup.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js","./getMarkupWrap":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -15797,7 +15798,7 @@ var DefaultEventPluginOrder = [
 
 module.exports = DefaultEventPluginOrder;
 
-},{"./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
+},{"./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -15937,7 +15938,7 @@ var EnterLeaveEventPlugin = {
 
 module.exports = EnterLeaveEventPlugin;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticMouseEvent.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticMouseEvent.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -16009,7 +16010,7 @@ var EventConstants = {
 
 module.exports = EventConstants;
 
-},{"./keyMirror":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventListener.js":[function(require,module,exports){
+},{"./keyMirror":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventListener.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16099,7 +16100,7 @@ var EventListener = {
 module.exports = EventListener;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
+},{"./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -16375,7 +16376,7 @@ var EventPluginHub = {
 module.exports = EventPluginHub;
 
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginUtils.js","./accumulateInto":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
+},{"./EventPluginRegistry":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginUtils.js","./accumulateInto":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -16655,7 +16656,7 @@ var EventPluginRegistry = {
 module.exports = EventPluginRegistry;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -16876,7 +16877,7 @@ var EventPluginUtils = {
 module.exports = EventPluginUtils;
 
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -17018,7 +17019,7 @@ var EventPropagators = {
 module.exports = EventPropagators;
 
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -17063,7 +17064,7 @@ var ExecutionEnvironment = {
 
 module.exports = ExecutionEnvironment;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -17255,7 +17256,7 @@ var HTMLDOMPropertyConfig = {
 
 module.exports = HTMLDOMPropertyConfig;
 
-},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LinkedStateMixin.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LinkedStateMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -17296,7 +17297,7 @@ var LinkedStateMixin = {
 
 module.exports = LinkedStateMixin;
 
-},{"./ReactLink":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLink.js","./ReactStateSetters":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactStateSetters.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
+},{"./ReactLink":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLink.js","./ReactStateSetters":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactStateSetters.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -17452,7 +17453,7 @@ var LinkedValueUtils = {
 module.exports = LinkedValueUtils;
 
 }).call(this,require('_process'))
-},{"./ReactPropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypes.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LocalEventTrapMixin.js":[function(require,module,exports){
+},{"./ReactPropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypes.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LocalEventTrapMixin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -17502,7 +17503,7 @@ var LocalEventTrapMixin = {
 module.exports = LocalEventTrapMixin;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js","./accumulateInto":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/MobileSafariClickEventPlugin.js":[function(require,module,exports){
+},{"./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js","./accumulateInto":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/MobileSafariClickEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -17560,7 +17561,7 @@ var MobileSafariClickEventPlugin = {
 
 module.exports = MobileSafariClickEventPlugin;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
 /**
  * Copyright 2014, Facebook, Inc.
  * All rights reserved.
@@ -17607,7 +17608,7 @@ function assign(target, sources) {
 
 module.exports = assign;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -17723,7 +17724,7 @@ var PooledClass = {
 module.exports = PooledClass;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -17911,7 +17912,7 @@ React.version = '0.12.2';
 module.exports = React;
 
 }).call(this,require('_process'))
-},{"./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js","./EventPluginUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginUtils.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactChildren.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactContext":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactDOMComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMComponent.js","./ReactDefaultInjection":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultInjection.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElementValidator.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLegacyElement.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./ReactPropTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypes.js","./ReactServerRendering":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactServerRendering.js","./ReactTextComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTextComponent.js","./deprecated":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/deprecated.js","./onlyChild":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/onlyChild.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
+},{"./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js","./EventPluginUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginUtils.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactChildren.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactContext":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactDOMComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMComponent.js","./ReactDefaultInjection":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultInjection.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElementValidator.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLegacyElement.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./ReactPropTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypes.js","./ReactServerRendering":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactServerRendering.js","./ReactTextComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTextComponent.js","./deprecated":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/deprecated.js","./onlyChild":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/onlyChild.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -17954,7 +17955,7 @@ var ReactBrowserComponentMixin = {
 module.exports = ReactBrowserComponentMixin;
 
 }).call(this,require('_process'))
-},{"./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEmptyComponent.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
+},{"./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEmptyComponent.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -18309,7 +18310,7 @@ var ReactBrowserEventEmitter = assign({}, ReactEventEmitterMixin, {
 
 module.exports = ReactBrowserEventEmitter;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEventEmitterMixin.js","./ViewportMetrics":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isEventSupported.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCSSTransitionGroup.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEventEmitterMixin.js","./ViewportMetrics":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isEventSupported.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCSSTransitionGroup.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -18376,7 +18377,7 @@ var ReactCSSTransitionGroup = React.createClass({
 
 module.exports = ReactCSSTransitionGroup;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js","./ReactCSSTransitionGroupChild":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCSSTransitionGroupChild.js","./ReactTransitionGroup":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionGroup.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCSSTransitionGroupChild.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js","./ReactCSSTransitionGroupChild":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCSSTransitionGroupChild.js","./ReactTransitionGroup":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionGroup.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCSSTransitionGroupChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -18511,7 +18512,7 @@ var ReactCSSTransitionGroupChild = React.createClass({
 module.exports = ReactCSSTransitionGroupChild;
 
 }).call(this,require('_process'))
-},{"./CSSCore":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSCore.js","./React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js","./ReactTransitionEvents":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionEvents.js","./onlyChild":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/onlyChild.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
+},{"./CSSCore":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSCore.js","./React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js","./ReactTransitionEvents":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionEvents.js","./onlyChild":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/onlyChild.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -18661,7 +18662,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 }).call(this,require('_process'))
-},{"./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./traverseAllChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
+},{"./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./traverseAllChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -19104,7 +19105,7 @@ var ReactComponent = {
 module.exports = ReactComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactOwner.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./keyMirror":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactOwner.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./keyMirror":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -19226,7 +19227,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 }).call(this,require('_process'))
-},{"./ReactDOMIDOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMarkupChecksum":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMarkupChecksum.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./ReactReconcileTransaction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactReconcileTransaction.js","./getReactRootElementInContainer":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getReactRootElementInContainer.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/setInnerHTML.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponentWithPureRenderMixin.js":[function(require,module,exports){
+},{"./ReactDOMIDOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMarkupChecksum":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMarkupChecksum.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./ReactReconcileTransaction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactReconcileTransaction.js","./getReactRootElementInContainer":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getReactRootElementInContainer.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/setInnerHTML.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponentWithPureRenderMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -19275,7 +19276,7 @@ var ReactComponentWithPureRenderMixin = {
 
 module.exports = ReactComponentWithPureRenderMixin;
 
-},{"./shallowEqual":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shallowEqual.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
+},{"./shallowEqual":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shallowEqual.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -20715,7 +20716,7 @@ var ReactCompositeComponent = {
 module.exports = ReactCompositeComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js","./ReactContext":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElementValidator.js","./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEmptyComponent.js","./ReactErrorUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactErrorUtils.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLegacyElement.js","./ReactOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactOwner.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./ReactPropTransferer":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTransferer.js","./ReactPropTypeLocationNames":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypeLocations.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./keyMirror":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js","./mapObject":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/mapObject.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/monitorCodeUse.js","./shouldUpdateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactContext.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js","./ReactContext":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElementValidator.js","./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEmptyComponent.js","./ReactErrorUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactErrorUtils.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLegacyElement.js","./ReactOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactOwner.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./ReactPropTransferer":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTransferer.js","./ReactPropTypeLocationNames":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypeLocations.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./keyMirror":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js","./mapObject":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/mapObject.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/monitorCodeUse.js","./shouldUpdateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactContext.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -20777,7 +20778,7 @@ var ReactContext = {
 
 module.exports = ReactContext;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -20811,7 +20812,7 @@ var ReactCurrentOwner = {
 
 module.exports = ReactCurrentOwner;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -20994,7 +20995,7 @@ var ReactDOM = mapObject({
 module.exports = ReactDOM;
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElementValidator.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLegacyElement.js","./mapObject":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/mapObject.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElementValidator.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLegacyElement.js","./mapObject":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/mapObject.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -21059,7 +21060,7 @@ var ReactDOMButton = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMButton;
 
-},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/AutoFocusMixin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./keyMirror":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/AutoFocusMixin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./keyMirror":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -21546,7 +21547,7 @@ assign(
 module.exports = ReactDOMComponent;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./escapeTextForBrowser":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/escapeTextForBrowser.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./isEventSupported":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isEventSupported.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/monitorCodeUse.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMForm.js":[function(require,module,exports){
+},{"./CSSPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./escapeTextForBrowser":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/escapeTextForBrowser.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./isEventSupported":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isEventSupported.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/monitorCodeUse.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMForm.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -21596,7 +21597,7 @@ var ReactDOMForm = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMForm;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -21782,7 +21783,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSPropertyOperations.js","./DOMChildrenOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/setInnerHTML.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMImg.js":[function(require,module,exports){
+},{"./CSSPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSPropertyOperations.js","./DOMChildrenOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/setInnerHTML.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMImg.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -21830,7 +21831,7 @@ var ReactDOMImg = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMImg;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -22008,7 +22009,7 @@ var ReactDOMInput = ReactCompositeComponent.createClass({
 module.exports = ReactDOMInput;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -22061,7 +22062,7 @@ var ReactDOMOption = ReactCompositeComponent.createClass({
 module.exports = ReactDOMOption;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
+},{"./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -22245,7 +22246,7 @@ var ReactDOMSelect = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMSelect;
 
-},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/AutoFocusMixin.js","./LinkedValueUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/AutoFocusMixin.js","./LinkedValueUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -22454,7 +22455,7 @@ var ReactDOMSelection = {
 
 module.exports = ReactDOMSelection;
 
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./getNodeForCharacterOffset":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./getNodeForCharacterOffset":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -22595,7 +22596,7 @@ var ReactDOMTextarea = ReactCompositeComponent.createClass({
 module.exports = ReactDOMTextarea;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOM.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -22668,7 +22669,7 @@ var ReactDefaultBatchingStrategy = {
 
 module.exports = ReactDefaultBatchingStrategy;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -22797,7 +22798,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ClientReactRootIndex.js","./CompositionEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CompositionEventPlugin.js","./DefaultEventPluginOrder":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EnterLeaveEventPlugin.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./HTMLDOMPropertyConfig":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/HTMLDOMPropertyConfig.js","./MobileSafariClickEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/MobileSafariClickEventPlugin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMButton.js","./ReactDOMComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMForm":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMForm.js","./ReactDOMImg":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMImg.js","./ReactDOMInput":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMTextarea.js","./ReactDefaultBatchingStrategy":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./SVGDOMPropertyConfig":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SimpleEventPlugin.js","./createFullPageComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/createFullPageComponent.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
+},{"./BeforeInputEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ClientReactRootIndex.js","./CompositionEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CompositionEventPlugin.js","./DefaultEventPluginOrder":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EnterLeaveEventPlugin.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./HTMLDOMPropertyConfig":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/HTMLDOMPropertyConfig.js","./MobileSafariClickEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/MobileSafariClickEventPlugin.js","./ReactBrowserComponentMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMButton.js","./ReactDOMComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMForm":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMForm.js","./ReactDOMImg":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMImg.js","./ReactDOMInput":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMTextarea.js","./ReactDefaultBatchingStrategy":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./SVGDOMPropertyConfig":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SimpleEventPlugin.js","./createFullPageComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/createFullPageComponent.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -23057,7 +23058,7 @@ var ReactDefaultPerf = {
 
 module.exports = ReactDefaultPerf;
 
-},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./performanceNow":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/performanceNow.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./performanceNow":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/performanceNow.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -23263,7 +23264,7 @@ var ReactDefaultPerfAnalysis = {
 
 module.exports = ReactDefaultPerfAnalysis;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -23509,7 +23510,7 @@ ReactElement.isValidElement = function(object) {
 module.exports = ReactElement;
 
 }).call(this,require('_process'))
-},{"./ReactContext":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
+},{"./ReactContext":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -23791,7 +23792,7 @@ var ReactElementValidator = {
 module.exports = ReactElementValidator;
 
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypeLocations.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/monitorCodeUse.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypeLocations.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/monitorCodeUse.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -23868,7 +23869,7 @@ var ReactEmptyComponent = {
 module.exports = ReactEmptyComponent;
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -23900,7 +23901,7 @@ var ReactErrorUtils = {
 
 module.exports = ReactErrorUtils;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -23950,7 +23951,7 @@ var ReactEventEmitterMixin = {
 
 module.exports = ReactEventEmitterMixin;
 
-},{"./EventPluginHub":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
+},{"./EventPluginHub":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -24134,7 +24135,7 @@ var ReactEventListener = {
 
 module.exports = ReactEventListener;
 
-},{"./EventListener":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventListener.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventTarget.js","./getUnboundedScrollPosition":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getUnboundedScrollPosition.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
+},{"./EventListener":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventListener.js","./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventTarget.js","./getUnboundedScrollPosition":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getUnboundedScrollPosition.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -24174,7 +24175,7 @@ var ReactInjection = {
 
 module.exports = ReactInjection;
 
-},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js","./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -24310,7 +24311,7 @@ var ReactInputSelection = {
 
 module.exports = ReactInputSelection;
 
-},{"./ReactDOMSelection":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDOMSelection.js","./containsNode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/containsNode.js","./focusNode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/focusNode.js","./getActiveElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getActiveElement.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
+},{"./ReactDOMSelection":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDOMSelection.js","./containsNode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/containsNode.js","./focusNode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/focusNode.js","./getActiveElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getActiveElement.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -24645,7 +24646,7 @@ var ReactInstanceHandles = {
 module.exports = ReactInstanceHandles;
 
 }).call(this,require('_process'))
-},{"./ReactRootIndex":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactRootIndex.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLegacyElement.js":[function(require,module,exports){
+},{"./ReactRootIndex":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactRootIndex.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLegacyElement.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -24892,7 +24893,7 @@ ReactLegacyElementFactory._isLegacyCallWarningEnabled = true;
 module.exports = ReactLegacyElementFactory;
 
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/monitorCodeUse.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLink.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./monitorCodeUse":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/monitorCodeUse.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLink.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -24965,7 +24966,7 @@ ReactLink.PropTypes = {
 
 module.exports = ReactLink;
 
-},{"./React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
+},{"./React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -25013,7 +25014,7 @@ var ReactMarkupChecksum = {
 
 module.exports = ReactMarkupChecksum;
 
-},{"./adler32":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/adler32.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
+},{"./adler32":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/adler32.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -25711,7 +25712,7 @@ ReactMount.renderComponent = deprecated(
 module.exports = ReactMount;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLegacyElement.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./containsNode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/containsNode.js","./deprecated":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/deprecated.js","./getReactRootElementInContainer":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getReactRootElementInContainer.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./shouldUpdateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLegacyElement.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./containsNode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/containsNode.js","./deprecated":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/deprecated.js","./getReactRootElementInContainer":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getReactRootElementInContainer.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./shouldUpdateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -26139,7 +26140,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 
-},{"./ReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js","./ReactMultiChildUpdateTypes":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./flattenChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/flattenChildren.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shouldUpdateReactComponent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
+},{"./ReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js","./ReactMultiChildUpdateTypes":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./flattenChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/flattenChildren.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shouldUpdateReactComponent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -26172,7 +26173,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 
 module.exports = ReactMultiChildUpdateTypes;
 
-},{"./keyMirror":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
+},{"./keyMirror":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -26245,7 +26246,7 @@ var ReactNativeComponent = {
 module.exports = ReactNativeComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -26401,7 +26402,7 @@ var ReactOwner = {
 module.exports = ReactOwner;
 
 }).call(this,require('_process'))
-},{"./emptyObject":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyObject.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
+},{"./emptyObject":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyObject.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -26485,7 +26486,7 @@ function _noMeasure(objName, fnName, func) {
 module.exports = ReactPerf;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTransferer.js":[function(require,module,exports){
+},{"_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTransferer.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -26652,7 +26653,7 @@ var ReactPropTransferer = {
 module.exports = ReactPropTransferer;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./joinClasses":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/joinClasses.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./joinClasses":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/joinClasses.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -26680,7 +26681,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = ReactPropTypeLocationNames;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
+},{"_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -26704,7 +26705,7 @@ var ReactPropTypeLocations = keyMirror({
 
 module.exports = ReactPropTypeLocations;
 
-},{"./keyMirror":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
+},{"./keyMirror":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -27058,7 +27059,7 @@ function getPreciseType(propValue) {
 
 module.exports = ReactPropTypes;
 
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTypeLocationNames.js","./deprecated":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/deprecated.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPutListenerQueue.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTypeLocationNames.js","./deprecated":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/deprecated.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPutListenerQueue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -27114,7 +27115,7 @@ PooledClass.addPoolingTo(ReactPutListenerQueue);
 
 module.exports = ReactPutListenerQueue;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -27290,7 +27291,7 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
 
-},{"./CallbackQueue":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactInputSelection":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInputSelection.js","./ReactPutListenerQueue":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Transaction.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactInputSelection":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInputSelection.js","./ReactPutListenerQueue":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Transaction.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -27321,7 +27322,7 @@ var ReactRootIndex = {
 
 module.exports = ReactRootIndex;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -27401,7 +27402,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerRenderingTransaction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactServerRenderingTransaction.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerRenderingTransaction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactServerRenderingTransaction.js","./instantiateReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2014, Facebook, Inc.
  * All rights reserved.
@@ -27514,7 +27515,7 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
 
-},{"./CallbackQueue":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./ReactPutListenerQueue":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactStateSetters.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./ReactPutListenerQueue":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactStateSetters.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -27620,7 +27621,7 @@ ReactStateSetters.Mixin = {
 
 module.exports = ReactStateSetters;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTestUtils.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTestUtils.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -28032,7 +28033,7 @@ for (eventType in topLevelTypes) {
 
 module.exports = ReactTestUtils;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactMount":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactMount.js","./ReactTextComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTextComponent.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTextComponent.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js","./ReactBrowserEventEmitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactMount":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactMount.js","./ReactTextComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTextComponent.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTextComponent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -28138,7 +28139,7 @@ ReactTextComponentFactory.type = ReactTextComponent;
 
 module.exports = ReactTextComponentFactory;
 
-},{"./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./escapeTextForBrowser":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/escapeTextForBrowser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionChildMapping.js":[function(require,module,exports){
+},{"./DOMPropertyOperations":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./escapeTextForBrowser":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/escapeTextForBrowser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionChildMapping.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -28239,7 +28240,7 @@ var ReactTransitionChildMapping = {
 
 module.exports = ReactTransitionChildMapping;
 
-},{"./ReactChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactChildren.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionEvents.js":[function(require,module,exports){
+},{"./ReactChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactChildren.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionEvents.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -28350,7 +28351,7 @@ var ReactTransitionEvents = {
 
 module.exports = ReactTransitionEvents;
 
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionGroup.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionGroup.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -28539,7 +28540,7 @@ var ReactTransitionGroup = React.createClass({
 
 module.exports = ReactTransitionGroup;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js","./ReactTransitionChildMapping":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionChildMapping.js","./cloneWithProps":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/cloneWithProps.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js","./ReactTransitionChildMapping":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionChildMapping.js","./cloneWithProps":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/cloneWithProps.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -28829,7 +28830,7 @@ var ReactUpdates = {
 module.exports = ReactUpdates;
 
 }).call(this,require('_process'))
-},{"./CallbackQueue":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCurrentOwner.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPerf.js","./Transaction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Transaction.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactWithAddons.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./ReactCurrentOwner":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCurrentOwner.js","./ReactPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPerf.js","./Transaction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Transaction.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactWithAddons.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -28883,7 +28884,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = React;
 
 }).call(this,require('_process'))
-},{"./LinkedStateMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/LinkedStateMixin.js","./React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js","./ReactCSSTransitionGroup":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCSSTransitionGroup.js","./ReactComponentWithPureRenderMixin":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactComponentWithPureRenderMixin.js","./ReactDefaultPerf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactDefaultPerf.js","./ReactTestUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTestUtils.js","./ReactTransitionGroup":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTransitionGroup.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactUpdates.js","./cloneWithProps":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/cloneWithProps.js","./cx":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/cx.js","./update":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/update.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
+},{"./LinkedStateMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/LinkedStateMixin.js","./React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js","./ReactCSSTransitionGroup":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCSSTransitionGroup.js","./ReactComponentWithPureRenderMixin":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactComponentWithPureRenderMixin.js","./ReactDefaultPerf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactDefaultPerf.js","./ReactTestUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTestUtils.js","./ReactTransitionGroup":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTransitionGroup.js","./ReactUpdates":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactUpdates.js","./cloneWithProps":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/cloneWithProps.js","./cx":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/cx.js","./update":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/update.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -28975,7 +28976,7 @@ var SVGDOMPropertyConfig = {
 
 module.exports = SVGDOMPropertyConfig;
 
-},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/DOMProperty.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/DOMProperty.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29170,7 +29171,7 @@ var SelectEventPlugin = {
 
 module.exports = SelectEventPlugin;
 
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js","./getActiveElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getActiveElement.js","./isTextInputElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js","./shallowEqual":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shallowEqual.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js","./getActiveElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getActiveElement.js","./isTextInputElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js","./shallowEqual":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shallowEqual.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29201,7 +29202,7 @@ var ServerReactRootIndex = {
 
 module.exports = ServerReactRootIndex;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -29629,7 +29630,7 @@ var SimpleEventPlugin = {
 module.exports = SimpleEventPlugin;
 
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventConstants.js","./EventPluginUtils":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPluginUtils.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/EventPropagators.js","./SyntheticClipboardEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventCharCode.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventConstants.js","./EventPluginUtils":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPluginUtils.js","./EventPropagators":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/EventPropagators.js","./SyntheticClipboardEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventCharCode.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29675,7 +29676,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 
-},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29721,7 +29722,7 @@ SyntheticEvent.augmentClass(
 module.exports = SyntheticCompositionEvent;
 
 
-},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29760,7 +29761,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
 
-},{"./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29918,7 +29919,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.threeArgumentPooler);
 
 module.exports = SyntheticEvent;
 
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/PooledClass.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js","./getEventTarget":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventTarget.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/PooledClass.js","./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js","./getEventTarget":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventTarget.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -29957,7 +29958,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
 
-},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
  * All rights reserved.
@@ -30004,7 +30005,7 @@ SyntheticEvent.augmentClass(
 module.exports = SyntheticInputEvent;
 
 
-},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30091,7 +30092,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
 
-},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventModifierState.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventModifierState.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30174,7 +30175,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
 
-},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventModifierState.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventModifierState.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30222,7 +30223,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
 
-},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventModifierState.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventModifierState.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30284,7 +30285,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
 
-},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventTarget.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventTarget.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30345,7 +30346,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
 
-},{"./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Transaction.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Transaction.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -30586,7 +30587,7 @@ var Transaction = {
 module.exports = Transaction;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30618,7 +30619,7 @@ var ViewportMetrics = {
 
 module.exports = ViewportMetrics;
 
-},{"./getUnboundedScrollPosition":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getUnboundedScrollPosition.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
+},{"./getUnboundedScrollPosition":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getUnboundedScrollPosition.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -30684,7 +30685,7 @@ function accumulateInto(current, next) {
 module.exports = accumulateInto;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/adler32.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/adler32.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30718,7 +30719,7 @@ function adler32(data) {
 
 module.exports = adler32;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/camelize.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/camelize.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30750,7 +30751,7 @@ function camelize(string) {
 
 module.exports = camelize;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/camelizeStyleName.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/camelizeStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2014, Facebook, Inc.
  * All rights reserved.
@@ -30792,7 +30793,7 @@ function camelizeStyleName(string) {
 
 module.exports = camelizeStyleName;
 
-},{"./camelize":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/camelize.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/cloneWithProps.js":[function(require,module,exports){
+},{"./camelize":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/camelize.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/cloneWithProps.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -30851,7 +30852,7 @@ function cloneWithProps(child, props) {
 module.exports = cloneWithProps;
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactPropTransferer":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactPropTransferer.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/containsNode.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactPropTransferer":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactPropTransferer.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/containsNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30895,7 +30896,7 @@ function containsNode(outerNode, innerNode) {
 
 module.exports = containsNode;
 
-},{"./isTextNode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isTextNode.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/createArrayFrom.js":[function(require,module,exports){
+},{"./isTextNode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isTextNode.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/createArrayFrom.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -30981,7 +30982,7 @@ function createArrayFrom(obj) {
 
 module.exports = createArrayFrom;
 
-},{"./toArray":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/toArray.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/createFullPageComponent.js":[function(require,module,exports){
+},{"./toArray":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/toArray.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/createFullPageComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -31042,7 +31043,7 @@ function createFullPageComponent(tag) {
 module.exports = createFullPageComponent;
 
 }).call(this,require('_process'))
-},{"./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactCompositeComponent.js","./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/createNodesFromMarkup.js":[function(require,module,exports){
+},{"./ReactCompositeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactCompositeComponent.js","./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/createNodesFromMarkup.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -31132,7 +31133,7 @@ function createNodesFromMarkup(markup, handleScript) {
 module.exports = createNodesFromMarkup;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./createArrayFrom":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/createArrayFrom.js","./getMarkupWrap":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/cx.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./createArrayFrom":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/createArrayFrom.js","./getMarkupWrap":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/cx.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31171,7 +31172,7 @@ function cx(classNames) {
 
 module.exports = cx;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31229,7 +31230,7 @@ function dangerousStyleValue(name, value) {
 
 module.exports = dangerousStyleValue;
 
-},{"./CSSProperty":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/CSSProperty.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/deprecated.js":[function(require,module,exports){
+},{"./CSSProperty":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/CSSProperty.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/deprecated.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -31280,7 +31281,7 @@ function deprecated(namespace, oldName, newName, ctx, fn) {
 module.exports = deprecated;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31314,7 +31315,7 @@ emptyFunction.thatReturnsArgument = function(arg) { return arg; };
 
 module.exports = emptyFunction;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyObject.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyObject.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -31338,7 +31339,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = emptyObject;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/escapeTextForBrowser.js":[function(require,module,exports){
+},{"_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/escapeTextForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31379,7 +31380,7 @@ function escapeTextForBrowser(text) {
 
 module.exports = escapeTextForBrowser;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -31448,7 +31449,7 @@ function flattenChildren(children) {
 module.exports = flattenChildren;
 
 }).call(this,require('_process'))
-},{"./ReactTextComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactTextComponent.js","./traverseAllChildren":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/focusNode.js":[function(require,module,exports){
+},{"./ReactTextComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactTextComponent.js","./traverseAllChildren":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/focusNode.js":[function(require,module,exports){
 /**
  * Copyright 2014, Facebook, Inc.
  * All rights reserved.
@@ -31477,7 +31478,7 @@ function focusNode(node) {
 
 module.exports = focusNode;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31508,7 +31509,7 @@ var forEachAccumulated = function(arr, cb, scope) {
 
 module.exports = forEachAccumulated;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getActiveElement.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getActiveElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31537,7 +31538,7 @@ function getActiveElement() /*?DOMElement*/ {
 
 module.exports = getActiveElement;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31589,7 +31590,7 @@ function getEventCharCode(nativeEvent) {
 
 module.exports = getEventCharCode;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31694,7 +31695,7 @@ function getEventKey(nativeEvent) {
 
 module.exports = getEventKey;
 
-},{"./getEventCharCode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventCharCode.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
+},{"./getEventCharCode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventCharCode.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
  * All rights reserved.
@@ -31741,7 +31742,7 @@ function getEventModifierState(nativeEvent) {
 
 module.exports = getEventModifierState;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31772,7 +31773,7 @@ function getEventTarget(nativeEvent) {
 
 module.exports = getEventTarget;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getMarkupWrap.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getMarkupWrap.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -31889,7 +31890,7 @@ function getMarkupWrap(nodeName) {
 module.exports = getMarkupWrap;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31964,7 +31965,7 @@ function getNodeForCharacterOffset(root, offset) {
 
 module.exports = getNodeForCharacterOffset;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getReactRootElementInContainer.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getReactRootElementInContainer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -31999,7 +32000,7 @@ function getReactRootElementInContainer(container) {
 
 module.exports = getReactRootElementInContainer;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32036,7 +32037,7 @@ function getTextContentAccessor() {
 
 module.exports = getTextContentAccessor;
 
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32076,7 +32077,7 @@ function getUnboundedScrollPosition(scrollable) {
 
 module.exports = getUnboundedScrollPosition;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/hyphenate.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/hyphenate.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32109,7 +32110,7 @@ function hyphenate(string) {
 
 module.exports = hyphenate;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/hyphenateStyleName.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/hyphenateStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32150,7 +32151,7 @@ function hyphenateStyleName(string) {
 
 module.exports = hyphenateStyleName;
 
-},{"./hyphenate":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/hyphenate.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
+},{"./hyphenate":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/hyphenate.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -32264,7 +32265,7 @@ function instantiateReactComponent(element, parentCompositeType) {
 module.exports = instantiateReactComponent;
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactEmptyComponent.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactLegacyElement.js","./ReactNativeComponent":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactNativeComponent.js","./warning":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactEmptyComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactEmptyComponent.js","./ReactLegacyElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactLegacyElement.js","./ReactNativeComponent":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactNativeComponent.js","./warning":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -32321,7 +32322,7 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
+},{"_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32386,7 +32387,7 @@ function isEventSupported(eventNameSuffix, capture) {
 
 module.exports = isEventSupported;
 
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isNode.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32414,7 +32415,7 @@ function isNode(object) {
 
 module.exports = isNode;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32458,7 +32459,7 @@ function isTextInputElement(elem) {
 
 module.exports = isTextInputElement;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isTextNode.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isTextNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32483,7 +32484,7 @@ function isTextNode(object) {
 
 module.exports = isTextNode;
 
-},{"./isNode":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/isNode.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/joinClasses.js":[function(require,module,exports){
+},{"./isNode":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/isNode.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/joinClasses.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32524,7 +32525,7 @@ function joinClasses(className/*, ... */) {
 
 module.exports = joinClasses;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyMirror.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyMirror.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -32579,7 +32580,7 @@ var keyMirror = function(obj) {
 module.exports = keyMirror;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32615,7 +32616,7 @@ var keyOf = function(oneKeyObj) {
 
 module.exports = keyOf;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/mapObject.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/mapObject.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32668,7 +32669,7 @@ function mapObject(object, callback, context) {
 
 module.exports = mapObject;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/memoizeStringOnly.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/memoizeStringOnly.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32702,7 +32703,7 @@ function memoizeStringOnly(callback) {
 
 module.exports = memoizeStringOnly;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/monitorCodeUse.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/monitorCodeUse.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -32736,7 +32737,7 @@ function monitorCodeUse(eventName, data) {
 module.exports = monitorCodeUse;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -32776,7 +32777,7 @@ function onlyChild(children) {
 module.exports = onlyChild;
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/performance.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/performance.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32804,7 +32805,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = performance || {};
 
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/performanceNow.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/performanceNow.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32832,7 +32833,7 @@ var performanceNow = performance.now.bind(performance);
 
 module.exports = performanceNow;
 
-},{"./performance":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/performance.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
+},{"./performance":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/performance.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32910,7 +32911,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = setInnerHTML;
 
-},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shallowEqual.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shallowEqual.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32954,7 +32955,7 @@ function shallowEqual(objA, objB) {
 
 module.exports = shallowEqual;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2014, Facebook, Inc.
  * All rights reserved.
@@ -32992,7 +32993,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 
 module.exports = shouldUpdateReactComponent;
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/toArray.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/toArray.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -33064,7 +33065,7 @@ function toArray(obj) {
 module.exports = toArray;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
+},{"./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -33247,7 +33248,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/ReactInstanceHandles.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/update.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/ReactInstanceHandles.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/update.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014, Facebook, Inc.
@@ -33415,7 +33416,7 @@ function update(value, spec) {
 module.exports = update;
 
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/Object.assign.js","./invariant":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/invariant.js","./keyOf":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/keyOf.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/warning.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/Object.assign.js","./invariant":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/invariant.js","./keyOf":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/keyOf.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/warning.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014, Facebook, Inc.
@@ -33460,10 +33461,10 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = warning;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/emptyFunction.js","_process":"/Users/jonathanbirkholz/js/react/talk3/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/react.js":[function(require,module,exports){
+},{"./emptyFunction":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/emptyFunction.js","_process":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/browserify/node_modules/process/browser.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/react.js":[function(require,module,exports){
 module.exports = require('./lib/React');
 
-},{"./lib/React":"/Users/jonathanbirkholz/js/react/talk3/node_modules/react/lib/React.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/lib/client.js":[function(require,module,exports){
+},{"./lib/React":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/react/lib/React.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/lib/client.js":[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -34546,7 +34547,7 @@ request.put = function(url, data, fn){
 
 module.exports = request;
 
-},{"emitter":"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/node_modules/component-emitter/index.js","reduce":"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/node_modules/reduce-component/index.js"}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/node_modules/component-emitter/index.js":[function(require,module,exports){
+},{"emitter":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/node_modules/component-emitter/index.js","reduce":"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/node_modules/reduce-component/index.js"}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/node_modules/component-emitter/index.js":[function(require,module,exports){
 
 /**
  * Expose `Emitter`.
@@ -34712,7 +34713,7 @@ Emitter.prototype.hasListeners = function(event){
   return !! this.listeners(event).length;
 };
 
-},{}],"/Users/jonathanbirkholz/js/react/talk3/node_modules/superagent/node_modules/reduce-component/index.js":[function(require,module,exports){
+},{}],"/Users/jonathanbirkholz/js/react/react-alt-github-example/node_modules/superagent/node_modules/reduce-component/index.js":[function(require,module,exports){
 
 /**
  * Reduce `arr` with `fn`.
