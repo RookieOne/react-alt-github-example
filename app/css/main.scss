@@ -1,0 +1,17 @@
+nav {
+  margin-bottom: 36px;
+}
+
+input[type=text]:focus {
+  border-bottom-color: #1976D2;
+}
+
+#repo-details {
+  ul {
+    margin-top: 36px;
+    width: 250px;
+    i {
+      width: 25px;
+    }
+  }
+}
