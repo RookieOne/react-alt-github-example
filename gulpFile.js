@@ -25,7 +25,7 @@ gulp.task("watch", ["build-app", "webserver"], function() {
   gulp.watch(src.images, ["images"])
 })
 
-gulp.task("build-app", ["move-webpages", "bower-css", "bower-js", "fonts", "fonts-awesome", "css", "images", "react"])
+gulp.task("build-app", ["move-webpages", "bower-css", "bower-js", "fonts", "fonts-awesome", "css", "images", "app"])
 
 gulp.task("move-webpages", function() {
   return gulp.src(src.webpages)
@@ -83,7 +83,7 @@ gulp.task("webserver", ["build-app"], function() {
     }))
 })
 
-gulp.task("react", function() {
+gulp.task("app", function() {
   var bundler;
 
   var bundle = function() {
