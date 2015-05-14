@@ -25,5 +25,8 @@
     "superagent": "^0.21.0",
     "react-router": "^0.12.2",
     "alt": "^0.13.7"
+  },
+  "devDependencies": {
+    "vinyl-source-stream": "^1.1.0"
   }
 }
